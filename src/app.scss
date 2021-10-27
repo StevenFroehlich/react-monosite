@@ -3,21 +3,37 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 120px);
     background-color: black;
     position: relative;
-    top: 70px;
+    top: 120px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none; // for firefox
-    &::-webkit-scrollbar{
-        display: none;
+    &::-webkit-scrollbar {
+      display: none;
     }
 
     > * {
       width: 100%;
-      height: calc(100vh - 70px);
+      height: calc(100vh - 120px);
       scroll-snap-align: start;
     }
+  }
+
+  button {
+    position: absolute;
+    right: 50px;
+    z-index: 10;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #000 50%, #000 50%, #ff0253);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.5s;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
   }
 }

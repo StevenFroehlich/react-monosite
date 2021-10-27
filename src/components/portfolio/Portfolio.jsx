@@ -1,4 +1,3 @@
-import { CenterFocusStrong } from "@material-ui/icons";
 import "./portfolio.scss";
 
 export default function Portfolio() {
